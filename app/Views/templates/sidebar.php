@@ -29,6 +29,7 @@
                 <i class="fas fa-user"></i>
                 <span>Informasi Masyarakat</span></a>
         </li>
+
         <li class="nav-item">
             <a class="nav-link" href="<?= base_url('tanggapan/inputdata'); ?>">
                 <i class="fas fa-user"></i>

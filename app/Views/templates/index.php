@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>My Profile</title>
+    <title><?= $title ?></title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url(); ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -94,6 +94,7 @@
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url(); ?>/js/sb-admin-2.min.js"></script>
     <script src="<?= base_url(); ?>/vendor/jquery/script.js"></script>
+    <script src="<?= base_url(); ?>/vendor/jquery/script1.js"></script>
 
 </body>
 

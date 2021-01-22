@@ -133,7 +133,47 @@
     </div>
 </div>
 
+<!-- ubah data -->
+<div class="modal fade" id="modalubah">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ubah Data</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="<?= base_url('tanggapan/ubah'); ?>" method="post">
+                    <input type="hidden" name="id" id="id-tanggapan">
 
+                    <div class="form-grup mb-0">
+                        <label for="id_tanggapan"></label>
+                        <input type="text" name="id_tanggapan" id="id_tanggapan" class="form-control" placeholder="Masukan ID" value="<?php echo $row['id_tanggapan'] ?>">
+                    </div>
+                    <div class="form-grup mb-0">
+                        <label for="nama"></label>
+                        <input type="text" name="id_pengaduan" id="id_pengaduan" class="form-control" placeholder="Masukan ID Pengaduan" <?php echo $row['id_pengaduan'] ?>>
+                    </div>
+                    <div class="form-grup mb-0">
+                        <label for="tanggal_pengaduan"></label>
+                        <input type="date" name="tanggal_tanggapan" id="tanggal_tanggapan" class="form-control" placeholder="Masukan Tanggal Tanggapan" <?php echo $row['tanggal_tanggapan'] ?>>
+                    </div>
+                    <br>
+                    <div class="col-md-12">
+                        <select id="tanggapan" name="tanggapan" class="form-select" <?php echo $row['tanggapan'] ?>>
+                            <option <?php echo $row['tanggapan'] ?>>Selesai</option>
+                            <option <?php echo $row['tanggapan'] ?>>Tidak Selesai</option>
+                        </select>
+                    </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" name="ubah" class="btn btn-primary">Ubah Data</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
 
 
 
